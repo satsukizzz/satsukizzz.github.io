@@ -44,6 +44,7 @@
 
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
+  text-transform: none !important;
   height: 45px;
 }
 

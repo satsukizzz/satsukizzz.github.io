@@ -44,7 +44,6 @@
 
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
-  text-transform: uppercase;
   height: 45px;
 }
 
@@ -108,10 +107,6 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-img.article-image {
-  width: 100%;
-  height: auto;
-}
 
 .portfolio-max-width {
   max-width: 900px;
@@ -167,4 +162,3 @@ footer {
   background-image: url(images/footer-background.png);
   background-size: cover;
 }
-

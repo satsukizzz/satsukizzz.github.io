@@ -4,7 +4,8 @@
 
 .portfolio-header {
   position: relative;
-  background-image: url(images/header-bg.jpg);
+  /* background-image: url(images/header-bg.jpg); */
+  background-color: rgb(197,197,197);
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -51,8 +52,8 @@
 
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
-  height: 45px;
   text-transform: none;
+  height: 64px;
 }
 
 .portfolio-navigation-row  .mdl-navigation {
@@ -65,7 +66,7 @@
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  line-height: 42px;
+  line-height: 64px;
 }
 
 .portfolio-header .mdl-layout__drawer-button {

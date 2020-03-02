@@ -24,22 +24,25 @@
   min-height: 200px;
 }
 
+.portfolio-NOlogo-row {
+}
+
 .is-compact .portfolio-logo-row {
   min-height: auto;
 }
 
 .portfolio-logo {
-  background: url(images/logo.png) 50% no-repeat;
+  /* background: url(images/logo.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
-  margin: auto auto 10px;
+  margin: auto auto 10px; */
 }
 
 .is-compact .portfolio-logo {
-  height: 50px;
+  /* height: 50px;
   width: 50px;
-  margin-top: 7px;
+  margin-top: 7px; */
 }
 
 .portfolio-navigation-row {

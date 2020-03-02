@@ -1,3 +1,7 @@
+.mdl-button {
+  text-transform: none !important;
+}
+
 .portfolio-header {
   position: relative;
   background-image: url(images/header-bg.jpg);
@@ -47,8 +51,8 @@
 
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
-  text-transform: none !important;
   height: 45px;
+  text-transform: none;
 }
 
 .portfolio-navigation-row  .mdl-navigation {

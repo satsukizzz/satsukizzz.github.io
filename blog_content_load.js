@@ -1,31 +1,29 @@
 'use strict';
 
-window.onload=()=>{
-  const endpoint_get_contents="https://script.google.com/macros/s/AKfycbxO7BdPGsLfLoZreH0s-3w1hqCwrqzExReCa16ioKwBHHevLis/exec";
+window.onload = () => {
+  const endpoint_get_contents =
+    "https://script.google.com/macros/s/AKfycbxO7BdPGsLfLoZreH0s-3w1hqCwrqzExReCa16ioKwBHHevLis/exec";
 
-  $.ajax({
-    type:'GET',
-    url:endpoint_get_contents,
-    dataType:'jsonp',
-    data: {
-      case: 'blog_content',
-      callback:'myFunc001'
-    },
-  })
-  .then(
-//    (data) => add_contents(data),
-    (data) => {
-      for(let i=0; i< data.length; i++){
-      add_contents(data[i])};
+  axios
+    .get(endpoint_get_contents, {
+      adapter: axiosJsonpAdapter,
+      callbackParamName: "callback",
+      params: {
+        case: "blog_content",
+      },
+    })
+    .then((res) => {
+      for (let i = 0; i < res.data.length; i++) {
+        add_contents(res.data[i]);
+      }
       // console.log(data)
-    },
-    (jqXHR, textStatus, errorThrown) => {
-      alert('blogのコンテンツを読み込めませんでした。');
-      console.log("jqXHR          : " + jqXHR.status); // HTTPステータスを表示
-      console.log("textStatus     : " + textStatus);    // タイムアウト、パースエラーなどのエラー情報を表示
-      console.log("errorThrown    : " + errorThrown.message); //例外情報を表示
-    }
-  )
+    })
+    .catch((e) => {
+      add_contents({
+        date: "",
+        content: "error: blogのコンテンツを読み込めませんでした。",
+      });
+    });
 };
 
 function add_contents(content_json){

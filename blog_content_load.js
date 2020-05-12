@@ -31,7 +31,7 @@ function add_contents(content_json){
 
   const diary_content = JSON.parse(content_json);
 
-  const div_daily = document.createElement('div');
+  const div_daily = document.createElement('article');
   div_daily.classList.add('mdl-grid', 'mdl-cell', 'mdl-cell--4-col', 'mdl-cell--4-col-tablet', 'mdl-card', 'mdl-shadow--4dp');
 
   const div_date = document.createElement('div');

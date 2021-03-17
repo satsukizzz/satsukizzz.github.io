@@ -168,7 +168,19 @@
   margin: auto;
 }
 
+.mdl-logo {
+  margin-bottom: 0;
+}
+
 footer {
   /* background-image: url(images/footer-background.png); */
   background-size: cover;
+  align-items: center;
+  margin-top: auto;
+}
+
+body, .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
 }

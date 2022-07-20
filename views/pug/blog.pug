@@ -4,6 +4,8 @@ block variables
   - var page_name = "blog"
 
 block append head_scripts 
+  script(src="https://unpkg.com/axios/dist/axios.min.js")
+  script(src="https://unpkg.com/axios-jsonp/dist/index.js")
 
 block contents 
   div(class="mdl-grid portfolio-max-width" id="content-container")

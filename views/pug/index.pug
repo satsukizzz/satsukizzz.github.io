@@ -1,0 +1,64 @@
+extends extends/layout.pug
+
+block variables
+  - var page_name = "portfolio"
+
+block append head_scripts 
+
+block contents 
+  div(class="mdl-grid portfolio-max-width")
+    article(class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card")
+      div(class="mdl-card__media")
+      div(class="mdl-card__title")
+        h2(class="mdl-card__title-text") GitHub
+      div(class="mdl-card__supporting-text")
+        span 
+          time(datetime="2019") 2019
+          | 年頃よりGitHubでの開発を開始。
+      div(class="mdl-card__actions mdl-card--border")
+        a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://github.com/satsukizzz") link to GitHub
+    article(class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card")
+      div(class="mdl-card__media")
+      div(class="mdl-card__title")
+        h2(class="mdl-card__title-text") Qiita Profile
+      div(class="mdl-card__supporting-text")
+        span Qiitaにて情報収集と活動の公開。
+      div(class="mdl-card__actions mdl-card--border")
+        a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://qiita.com/satsukizzz") link to Qiita
+    article(class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card")
+      div(class="mdl-card__media")
+      div(class="mdl-card__title")
+        h2(class="mdl-card__title-text") サーバーレスLINEbotのためのGAS+GCP
+      div(class="mdl-card__supporting-text")
+        span LINEbotを扱うためLINEMessagingAPIをgoogleDriveのGoogleAppsScript(=GAS)で書いた。このログを取ることはLogger.logには不可能で、console.logに出力する。その結果はGoogleCloudPlatform(=GCP)のstackdriverでしか確認できない。無事ログが取れるまでの流れをまとめてある。
+      div(class="mdl-card__actions mdl-card--border")
+        a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://qiita.com/satsukizzz/items/a2fa073d38bd1ee40805") read more
+    article(class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card")
+      div(class="mdl-card__media")
+      div(class="mdl-card__title")
+        h2(class="mdl-card__title-text") 「電気回路と伝送線路の基礎」の誤植と議論
+      div(class="mdl-card__supporting-text")
+        span 工学科向け教科書である「電気回路と伝送線路の基礎」阿部真之、土岐博 共著。理学部物理学科卒の視点による誤植や議論の網羅的まとめ。
+      div(class="mdl-card__actions mdl-card--border")
+        a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="https://hackmd.io/@satsukizz/HJl948FE8") read more
+    article(class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card")
+      div(class="mdl-card__media")
+      div(class="mdl-card__title")
+        h2(class="mdl-card__title-text") FC2 Blog
+      div(class="mdl-card__supporting-text")
+        span 
+          | 技術用に
+          time(datetime="2017-08-26") 2017-08-26 
+          | まで使っていたブログ。
+      div(class="mdl-card__actions mdl-card--border")
+        a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://quitout.blog136.fc2.com/") link to FC2 blog
+    article(class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card")
+      div(class="mdl-card__media")
+      div(class="mdl-card__title")
+        h2(class="mdl-card__title-text") Qt CreatorのdllHell解決
+      div(class="mdl-card__supporting-text")
+        span Qt Creatorの初回インストール時にdllHellの問題が起きた。それに気づいた経緯と対処、そして無事にコンパイルが通ったところまでの流れをまとめてある。
+      div(class="mdl-card__actions mdl-card--border")
+        a(class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://quitout.blog136.fc2.com/blog-entry-28.html") read more
+
+block prepend body_last_scripts

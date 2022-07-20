@@ -1,0 +1,12 @@
+extends extends/layout.pug
+
+block variables
+  - var page_name = "blog"
+
+block append head_scripts 
+
+block contents 
+  div(class="mdl-grid portfolio-max-width" id="content-container")
+
+block prepend body_last_scripts 
+  script(src="blog_content_load.js")

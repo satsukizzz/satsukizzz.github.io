@@ -1,0 +1,14 @@
+nav(class="mdl-navigation mdl-typography--body-1-force-preferred-font")
+  case page_name.toLowerCase()
+    when "portfolio"
+      a(class="mdl-navigation__link is-active" href="index.html") Portfolio
+      a(class="mdl-navigation__link" href="blog.html") Blog
+      a(class="mdl-navigation__link" href="profile.html") Profile
+    when "blog"
+      a(class="mdl-navigation__link" href="index.html") Portfolio
+      a(class="mdl-navigation__link is-active" href="blog.html") Blog
+      a(class="mdl-navigation__link" href="profile.html") Profile
+    when "profile"
+      a(class="mdl-navigation__link" href="index.html") Portfolio
+      a(class="mdl-navigation__link" href="blog.html") Blog
+      a(class="mdl-navigation__link is-active" href="profile.html") Profile
